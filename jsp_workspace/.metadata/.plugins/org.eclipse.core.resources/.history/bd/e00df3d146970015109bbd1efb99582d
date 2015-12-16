@@ -1,0 +1,52 @@
+package com.yash.service;
+
+import java.util.List;
+
+import com.yash.dao.EmployeeServiceDao;
+import com.yash.domain.Employee;
+
+public class EmployeeService implements EmployeeServiceIntf {
+
+	
+	
+	@Override
+	public void addEmployee(Employee employee) {
+		EmployeeServiceDao employeeservicedao=new EmployeeServiceDao();
+		String query="Insert into employee(name,salary) values('"+employee.getEmployeeName()+"','"+employee.getSalary()+"'  )";
+		System.out.println(query);
+		employeeservicedao.Update(query);
+		
+	}
+
+	@Override
+	public void deleteEmployee(int employeeId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getEmployeeId(String username) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void updateEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<Employee> getAllDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> getEmployeedetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

@@ -1,0 +1,8 @@
+package com.yash.domain;
+
+public class Employee {
+
+	private String employeeName;
+	private int id;
+
+}
