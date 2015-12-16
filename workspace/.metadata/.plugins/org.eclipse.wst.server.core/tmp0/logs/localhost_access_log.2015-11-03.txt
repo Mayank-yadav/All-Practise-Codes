@@ -1,0 +1,12 @@
+127.0.0.1 - - [03/Nov/2015:16:43:46 +0530] "GET / HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:16:43:47 +0530] "GET /ComponentsJSFDemo/index.html HTTP/1.1" 200 606
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:16:44:00 +0530] "GET /ComponentsJSFDemo/faces/employeeForm.xhtml HTTP/1.1" 200 2085
+127.0.0.1 - - [03/Nov/2015:16:44:32 +0530] "GET / HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:16:44:34 +0530] "GET /JSFAddressForm/faces/index.xhtml HTTP/1.1" 200 2360
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:16:45:13 +0530] "GET /JSFShopppingApp/faces/index.xhtml HTTP/1.1" 200 2066
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:16:45:28 +0530] "GET /JSFShopppingApp/faces/registrationpage.xhtml HTTP/1.1" 200 2326
+127.0.0.1 - - [03/Nov/2015:17:10:50 +0530] "GET / HTTP/1.1" 404 983
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:17:11:10 +0530] "GET /EJBProduct/faces/index.xhtml HTTP/1.1" 404 1039
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:17:11:28 +0530] "GET /EJBProduct/faces/index.xhtml HTTP/1.1" 404 1039
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:17:12:00 +0530] "GET /EJBProduct/faces/index.xhtml HTTP/1.1" 404 1039
+0:0:0:0:0:0:0:1 - - [03/Nov/2015:17:12:59 +0530] "GET /EJBProduct/index.xhtml HTTP/1.1" 404 1027

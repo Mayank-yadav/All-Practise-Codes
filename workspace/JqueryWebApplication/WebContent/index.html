@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>body{ background-image:url(http://blog.parhammajd.co.uk/wp-content/uploads/2013/05/Intro1.jpg) }
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+ 
+ <script>
+$(document).ready(function() {
+
+ 
+    var wrapper         = $(".dynamic"); 
+    var add_button      = $(".add_field_button"); 
+    
+    var x = 1; 
+    $(add_button).click(function(e){ 
+        e.preventDefault();
+var title =prompt("Enter Title","input here");
+       
+            x++; 
+            $(wrapper).append('<div><lable>'+title+'</lable>&nbsp;<input type="text" name="values" id="values"/>&nbsp;<Button class="remove_field btn btn-info">-</Button></div>'); //add input box
+       
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    });
+    
+    $('#form').submit(function() {
+        if($('#form').valid()) {
+            var str = '';
+            str += $('#values').val() + '<br />';
+            
+            $('.display').append(str);
+        }
+        return false;
+    });
+});
+</script>
+
+
+</head>
+<body>
+
+	<div class="container">
+	<nav class="navbar navbar-default">
+  	<div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Jquery Practise</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        	<li class="active"><a href="#">Home</a></li>
+        	<li><a href="#">About Us</a></li>
+        	<li><a href="#">Services</a></li>
+        	<li><a href="#">Contact Us</a></li>
+      </ul>
+   	</div>
+  	</div>
+	</nav>
+	<div class="container">
+	<div class="jumbotron">
+	<div class="row">
+	<div class="col-md-6">
+	<h3>Display here:</h3>
+	 <div class="display"></div>
+	</div>
+	<div class="col-md-6">
+	
+	 <div class="well">
+	 
+	   <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Fields</button> -->
+<div  class="input_fields_wrap">
+		<button class="btn btn-info btn-lg add_field_button"  class="add_field_button">Add Fields</button></div>
+		<p id="demo"></p>
+		<!-- <label>Demo</label><input type="text" name="myText[]"/> -->
+	   <div>
+	   <form action=""  id="form">
+	   <br/>
+	   
+		<table>
+		<tr >
+ <div class="dynamic">
+		<td>
+
+<!-- <label>value</label><input type="text" name="myText[]">  --></td></div>
+		</tr>
+		</table>
+	     <input type="submit" value="SUBMIT" class="submit btn btn-info"/>
+	    	   </form>
+	   </div>
+	 </div>
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	  </div>
+	
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	
+</body>
+</html>

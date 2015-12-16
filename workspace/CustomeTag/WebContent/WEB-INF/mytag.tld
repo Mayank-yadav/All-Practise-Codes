@@ -1,0 +1,23 @@
+
+<taglib>
+
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+
+	<tag>
+		<name>InputTag</name>
+		<tag-class>com.yash.taglib.TestTag</tag-class>
+		<body-content>Empty</body-content>
+		<attribute>
+			<name>input1</name>
+			<rtexprvalue>true</rtexprvalue>
+			<required>false</required>
+		</attribute>
+	</tag>
+	<tag>
+		<name>CustomForm</name>
+		<tag-class>com.yash.taglib.CustomTag</tag-class>
+		<body-content>Empty</body-content>
+	</tag>
+
+</taglib>

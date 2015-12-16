@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14454057740660" configfile="/JSFShopppingApp/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf14458555109891" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf14458555109892" inlinks="pf14458555109892" path="index.xhtml"/>
+  <links id="pf14458555109892" target="pf14458555109891" source="pf14458555109891" outcome="index" redirect="true"/>
+</pageflow:Pageflow>

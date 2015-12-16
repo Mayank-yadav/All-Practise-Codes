@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<h:body>
+<center>
+<h:form >
+<table>
+	<tr>
+		<td>Name</td>
+		<td><h:inputText type="" id="name" value="#{userBean.name}"/></td>
+	</tr>
+	<tr>
+		<td>Contact</td>
+		<td><h:inputText id="no" value="#{userBean.address.hno}"/></td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td><h:selectBooleanCheckbox value="" />Male</td>
+		<td><h:selectBooleanCheckbox value="" />Female</td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><h:inputText id="no1" value=""/></td>
+	</tr>
+	<tr>
+		<td>Address</td>
+		<td><h:inputTextarea id="no2" value=""/></td>
+	</tr>
+	<tr>
+		<td>D.O.B</td>
+		<td>Calender</td>
+	</tr>
+	<tr>
+		<td>Year Of Experinece</td>
+		<td><h:dataTable>+2</h:dataTable></td>
+		
+		
+	</tr>
+	<tr>
+		<td>Technoloigies Known</td>
+		<td><h:selectManyCheckbox>Java</h:selectManyCheckbox></td>
+		<!-- <td><h:selectManyCheckbox>Hibernate</h:selectManyCheckbox></td>
+		<td><h:selectManyCheckbox>Spring</h:selectManyCheckbox></td> -->
+	</tr>
+	
+</table>
+<!-- Name:<h:inputText type="" id="name" value="#{userBean.name}"/><br/>
+Address:<h:inputText id="no" value="#{userBean.address.hno}"/> -->
+
+</h:form>
+</center>
+</h:body>
+</html>

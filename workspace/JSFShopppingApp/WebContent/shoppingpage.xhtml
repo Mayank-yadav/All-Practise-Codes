@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+ xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+            xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>body{ background-image:url(http://www.splitshire.com/wp-content/uploads/2014/09/SplitShire_Blur_Background_XVI.jpg) }</style>
+
+<style>
+.bg-1 { 
+    background-color: #474e5d; /* Green */
+    color: #ffffff;
+    opacity:0.93;
+}
+
+.well{
+opacity:0.93;
+}
+
+
+</style>
+<script>
+var obj=0;
+
+$(document).ready(function(){
+	
+    $("#Menbtn").click(function(){
+    	 $("#women").hide(500);
+    	$("#child").hide(500);
+     	$("#men").toggle(1000);
+   	$(".jumbotron").hide(500); 
+   	/* 
+   		var menvalue="#{productsBean.menProduct}";
+      	$(".add").replaceWith("<h1>Men:"+menvalue+"</h1>");  */
+		
+    });
+    $("#Womenbtn").click(function(){
+    	$("#men").hide(1000);
+    	$("#child").hide(500);
+    	$(".jumbotron").hide(500);
+  	$("#women").toggle(1000);
+   	
+        $(".add").replaceWith("<h1>women</h1>");
+    });
+    $("#Childbtn").click(function(){
+    	$("#men").hide(1000);
+    	$("#women").hide(500);
+    	$(".jumbotron").hide(500);
+     	$("#child").toggle(1000);
+        $(".add").replaceWith("<div ><h1>child</h1></div>");
+    });
+    
+    $('.target').click(function() {
+        $('#output').html(function(i, val) { return val*1+1 }); 
+      	var id=$(this).closest('table').attr('id');
+      	var cell1=document.getElementById(id).rows[0].cells[1].innerHTML;
+      	var cell2=document.getElementById(id).rows[1].cells[1].innerHTML;
+      obj=Number(cell2);
+      	alert(cell1);
+      	alert(cell2);
+    	document.getElementById('myForm:hidden1').value = cell1;
+
+    	document.getElementById('myForm:hidden2').value = cell2;
+    	
+      	/*  $('.modal-title').html(cell1); */
+		 $('#product').text(cell1);       
+		$('#price').text(cell2);      
+    });
+    
+    $('.carousel').carousel({
+        interval: 3000
+    });
+	var result=0;
+    var sums = 0;
+    $(".txt").each(function() {
+    	 
+        $(this).keyup(function(){
+        	 sums += parseFloat(this.value);
+       		result=sums*obj;
+        	document.getElementById('myForm:result').value = result;
+
+ 			/* alert(result); */
+       		$('#sum').text(result);   
+        });
+    });
+    
+});
+
+</script>
+</h:head>
+
+<h:body style="padding:20px">
+<div class="container">
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    <h:form id="myForm">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header text-center" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Product Details</h4>
+        </div>
+        <div class="modal-body">
+        
+ <table id="childtable5" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td ><h:inputHidden id="hidden1" value="#{cartBean.product}"><p id="product">T-shirts</p></h:inputHidden></td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td ><h:inputHidden id="hidden2" class="txt"  value="#{cartBean.price}"><p id="price">0</p></h:inputHidden></td>
+					</tr>
+					<tr>
+					<td>Quantity</td>
+					<td><h:inputText id="qbtn"  class="txt" value="#{cartBean.quantity}"/></td>
+					</tr>
+					 <tr>
+					<td>Total Cost</td>
+					<td><h:inputHidden id="result" value="#{cartBean.sum}"> <p id="sum">0</p></h:inputHidden></td>
+					</tr> 
+					
+					</table>
+            </div>
+        <div class="modal-footer">
+         <h:commandButton type="submit"  class="btn btn-primary " value="Add This Item" action="#{cartBean.savecart}"></h:commandButton>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      </h:form>
+    </div>
+  </div>
+  
+</div>
+<!-- End of container  -->
+
+
+<div class="container">
+ 
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    <h:form id="myForm1">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header text-center" >
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Payment by cash</h4>
+        </div>
+        <div class="modal-body">
+        
+			
+            </div>
+        <div class="modal-footer">
+         <h:commandButton type="submit"  class="btn btn-primary " value="Proceed to payment" action="#{cartBean.savecart}"></h:commandButton>
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+      </h:form>
+    </div>
+  </div>
+  
+</div>
+<!-- End of container  -->
+
+<!-- 	<button class="target btn btn-info" type="button">Click Me</button>
+ -->	
+       <!--  <form jsf:id="userform" role="form">
+ 
+            <p:messages id="msg" showDetail="true" closable="true" />
+ 
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text" class="form-control" placeholder="Enter firstname" jsf:value="#{userView.user.firstname}" />
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input id="lastname" type="text" class="form-control" placeholder="Enter lastname" jsf:value="#{userView.user.lastname}" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter email" jsf:value="#{userView.user.email}" />
+            </div>
+            <button type="submit" class="btn btn-default btn-primary" jsf:actionListener="#{userView.save}">
+                Submit
+                
+            </button>
+        </form> -->
+        <div class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cart:<a class="navbar-brand" id="output">0</a></a>
+    </div>
+    <h:form>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+     
+    
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Welcome:
+        <h:outputFormat value="#{customerBean.username}"/>
+        
+        </a></li>
+      <!-- <li><h:link value="Logout" outcome="index" /></li> -->
+      <li><h:commandLink value="Logout" action="#{customerBean.endSession}"/></li>
+    </ul>
+    
+    </div>
+    </h:form>
+  </div>
+</div>
+<!-- navbar ends -->
+      <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left" >
+          <div class="row-offcanvas row-offcanvas-right">
+             <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation">
+               <p class="visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              
+              <div class="well sidebar-nav" style='position:fixed;' >
+                <ul class="nav">
+                  <li>Select From Options</li>
+                  <li><a id="Menbtn" href="#">Men</a></li>
+                 
+                  <li><a id="Womenbtn" href="#">Women</a></li>
+                  <li><a id="Childbtn" href="#">Childrens</a></li>
+                  
+                </ul>
+              </div><!--/.well -->
+            </div>
+            
+            <!--/span-->
+            
+            <div class="col-xs-12 col-sm-8">
+              <p class="pull-left visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              <p class="pull-right visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvasright"><i class="glyphicon glyphicon-chevron-right"></i></button>
+              </p>
+              <div class="jumbotron">
+             <!--  <div class="page-header">
+                <h1>Shopping, Today!</h1></div>
+                <div class="add" >here</div>
+                <p>place to add images</p> -->
+             
+             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://www.theindianbeauty.com/wp-content/uploads/2014/01/revlon-colorstay-nail-paints-2.jpg" alt="..."/>
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://www.vanitynoapologies.com/wp-content/uploads/2015/01/best-beauty-and-makeup-products-in-2014-6.jpg" alt="..."/>
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://howtofundraise.com.au/files/2012/12/shopping1.jpg" alt="..."/>
+      <div class="carousel-caption">
+          <h3>Caption Text</h3>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!-- Carousel -->
+             
+             
+              </div>
+              
+              
+              <!-- Product:Men-->
+              
+              
+              <div id="men" class="row" style="display:none;">
+                <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="http://sharukhwaseem.weebly.com/uploads/3/9/7/5/39751488/s901993193701188121_p2_i1_w1300.jpeg"/>              
+                  <div class="well well-sm">
+					<table id="mentable1" class="table table-responsive" >
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>
+                 	
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                  
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="http://www.fellsman.org.uk/wp-content/uploads/2013/04/POLO-SHIRT-ROYAL-BLUE.jpg"/>              
+					<div class="well well-sm">
+					<table id="mentable2" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="http://static14.jassets.com/p/Identiti-Solid-Blue-Slim-Fit-Casual-Shirt-1903-540237-1-product2.jpg"/>              
+					<div class="well well-sm">
+					<table id="mentable3" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="http://avasystemiconline.com/uploaded/large/1433853151afgdfer.jpg"/>              
+					<div class="well well-sm">
+					<table id="mentable4" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  
+                   <img class="thumbnail img-responsive" src="http://www.fellsman.org.uk/wp-content/uploads/2013/04/POLO-SHIRT-ROYAL-BLUE.jpg"/>              
+					<div class="well well-sm">
+					<table id="mentable5" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                 <div class="col-sm-6 col-lg-4">
+                  
+                   <img class="thumbnail img-responsive" src="http://sharukhwaseem.weebly.com/uploads/3/9/7/5/39751488/s901993193701188121_p2_i1_w1300.jpeg"/>              
+					<div class="well well-sm">
+					<table id="mentable6" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+              
+               <!-- Product End-->
+              
+              
+                 <!-- Product:women-->
+              
+              
+              <div id="women" class="row" style="display:none;">
+                <div class="col-sm-6 col-lg-4">
+                  
+                   <img class="thumbnail img-responsive" src="http://s.tbdress.com/images/product/10/10994/10994692_5.jpg"/>              
+                  <div class="well well-sm">
+					<table id="womentable1" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>
+                 	
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                  
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                    
+                   <img class="thumbnail img-responsive" src="http://fashiontrendpk.com/wp-content/uploads/2015/10/Lades-Fashion-Frocks-Dresses-for-Indian-Style-1.jpg"/>              
+					<div class="well well-sm">
+					<table id="womentable2" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                    
+                   <img class="thumbnail img-responsive" src="http://fashiontrendpk.com/wp-content/uploads/2015/10/Lades-Fashion-Frocks-Dresses-for-Indian-Style-1.jpg"/>              
+					<div class="well well-sm">
+					<table id="womentable3" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  
+                   <img class="thumbnail img-responsive" src="https://s-media-cache-ak0.pinimg.com/236x/5e/12/da/5e12da3ecdd408018e398f5bfcaa2bcc.jpg"/>              
+					<div class="well well-sm">
+					<table id="womentable4" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="http://i00.i.aliimg.com/wsphoto/v0/2039080060_2/2014-new-plus-size-women-clothes-casual-fashion-long-sleeve-base-dress-print-character-Indian-women.jpg"/>              
+					<div class="well well-sm">
+					<table id="womentable5" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                 <div class="col-sm-6 col-lg-4">
+                   
+                   <img class="thumbnail img-responsive" src="http://www.hbafcs.com/wp-content/uploads/2015/03/Indian-Bridal-Pink-Color-Dresses-Fashion-2015.jpg"/>              
+					<div class="well well-sm">
+					<table id="womentable6" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+              
+               <!-- Product End-->
+               
+                  <!-- Product :Child -->
+              
+              
+              <div id="child" class="row" style="display:none;">
+                <div class="col-sm-6 col-lg-4">
+                   
+                   <img class="thumbnail img-responsive" src="http://image.dhgate.com/albu_343040712_00-1.0x0/hot-sale-blue-organza-crystal-beading-kids.jpg"/>              
+                  <div class="well well-sm">
+					<table id="childtable1" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>
+                 	
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                  
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                   
+                   <img class="thumbnail img-responsive"  src="http://ecx.images-amazon.com/images/I/61g5DVZ%2B5uL._UX385_.jpg"/>              
+					<div class="well well-sm">
+					<table id="childtable2" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                   
+                   <img class="thumbnail img-responsive" src="http://www.askwear.com/images/Kids%20dress%20sleeveless%20riband.jpg"/>              
+					<div class="well well-sm">
+					<table id="childtable3" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  
+                   <img class="thumbnail img-responsive" src="http://guideimg.alibaba.com/images/shop/87/11/13/3/kids-dream-toddler-girl-4t-mauve-shiny-chiffon-special-occasion-dress_715523.jpg"/>              
+					<div class="well well-sm">
+					<table id="childtable4" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                    
+                   <img class="thumbnail img-responsive" src="https://streamersllc.com//html/inventory/photos/SKIB-B355.JPG"/>              
+					<div class="well well-sm">
+					<table id="childtable5" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                 <div class="col-sm-6 col-lg-4">
+                 
+                   <img class="thumbnail img-responsive" src="https://s-media-cache-ak0.pinimg.com/236x/33/69/03/336903a47ac436e0a7b76b9b1657f9da.jpg"/>              
+					<div class="well well-sm">
+					<table id="childtable6" class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price(in $):</td>
+					<td>20</td>
+					</tr>
+					<tr>
+					<td>  <button type="button" id="target" data-toggle="modal" data-target="#myModal" class="btn btn-primary target ">Add To Cart</button></td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+              
+               <!-- Product End-->
+              
+            </div><!--/span-->
+    
+   
+    
+    
+            <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebarRight" role="navigation">
+               <p class="visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              <div class="well sidebar-nav" style='position:fixed;' >
+                <ul class="nav">
+                 <li >Proceed to payment</li><br/>
+                 <h:form>
+                  <li><h:commandButton action="slip" class="btn btn-warning" value="Pay by card"></h:commandButton></li></h:form><br/>
+                  <li><button data-toggle="modal" data-target="#myModal1"   class="btn btn-warning" >cash on delivery</button></li>
+                
+                 <li>Sort By</li>
+                  <li class="active"><a href="#">pricing</a></li>
+                  <li><a href="#">popularity</a></li>
+                  <li><a href="#">quality</a></li> 
+                  
+                 
+                  <li>Recent Visits</li>
+                  <li><a href="#">A</a></li>
+                  <li><a href="#">B</a></li>
+              
+               
+                </ul>
+              </div><!--/.well -->
+               
+            </div><!--/span-->
+          
+        </div>
+
+      </div><!--/row-->
+        
+      <br/>
+        
+      <footer  class="footer navbar-fixed-bottom" style="text-align:left;">
+        <p style="color:white;">© Yash Technoloogies 2015</p>
+      </footer>
+ 
+    </div><!--/.container-->
+       
+    </h:body>
+</html>

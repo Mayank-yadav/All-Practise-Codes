@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+</head>
+<body>
+<form method="post" action="TechSupportServlet">
+<table border="1">
+	<tr>
+	<td>EmailId</td>
+	<td><input type="text" name="userEmail"></td>
+	</tr>
+	<tr>
+	<td>Software</td>
+	<td>
+	<select name="software" >
+			<option value="eclipseJuno">Eclipse Juno</option>
+			<option value="netbeans">Netbeans</option>
+			<option value="eclipseHelios">Eclipse Helios</option>
+			<option value="vlc">VLC Media Player</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td>Operating system</td>
+	<td>
+	<select name="operatingSystem" >
+			<option>Windows</option>
+			<option>Linux</option>
+			<option>Mac Os</option>	
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	Description		
+	</td>
+	<td>
+	<textarea rows="4" cols="40" name="description" placeholder="Description">
+	
+	</textarea>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<Button type="submit" value="Submit">Submit</Button>
+	</td>
+	</tr>
+</table>
+
+</form>
+
+
+
+</body>
+</html>

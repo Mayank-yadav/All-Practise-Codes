@@ -1,0 +1,289 @@
+
+Oct 06, 2015 15:24:58.17 NEW SESSION
+Oct 06, 2015 15:24:58.17 1444125298136	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 08, 2015 18:04:42.04 NEW SESSION
+Oct 08, 2015 18:04:42.06 1444307682046	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 08, 2015 18:35:32.62 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 08, 2015 18:35:32.62 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 08, 2015 18:35:32.62 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 08, 2015 21:04:29.68 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 08, 2015 21:04:29.70 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 08, 2015 21:04:29.70 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 09, 2015 17:02:04.05 NEW SESSION
+Oct 09, 2015 17:02:04.05 [Child 3624] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 333
+Oct 09, 2015 17:02:04.05 [Child 3624] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 333
+Oct 09, 2015 18:04:42.47 1444394082463	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 09, 2015 22:33:16.67 [Child 4624] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 333
+
+Oct 11, 2015 10:23:50.31 NEW SESSION
+Oct 11, 2015 10:23:50.31 1444539230312	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 11, 2015 11:17:52.69 console.error: 
+Oct 11, 2015 11:17:52.70   Message: Error: Connection closed, pending request to server1.conn0.domstylerule40, type modifyProperties failed
+Oct 11, 2015 11:17:52.71   Stack:
+Oct 11, 2015 11:17:52.71     Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:1122:23
+Oct 11, 2015 11:17:52.71 StyleRuleFront<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/styles.js:1307:5
+Oct 11, 2015 11:17:52.71 Pool<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:820:9
+Oct 11, 2015 11:17:52.71 Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:1125:5
+Oct 11, 2015 11:17:52.71 PageStyleFront<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/styles.js:947:5
+Oct 11, 2015 11:17:52.71 Pool<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:820:9
+Oct 11, 2015 11:17:52.71 Front<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:1125:5
+Oct 11, 2015 11:17:52.72 exports.InspectorFront<.destroy@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/inspector.js:3733:5
+Oct 11, 2015 11:17:52.72 Toolbox.prototype.destroyInspector/outstanding/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource:///modules/devtools/framework/toolbox.js:1756:15
+Oct 11, 2015 11:17:52.72 TaskImpl_run@resource://gre/modules/Task.jsm:314:40
+Oct 11, 2015 11:17:52.72 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+Oct 11, 2015 11:17:52.72 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:801:7
+Oct 11, 2015 11:17:52.72 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:740:39
+Oct 11, 2015 11:17:52.72 
+Oct 11, 2015 11:18:21.88 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 11:18:21.88 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 11:18:21.88 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 13:38:17.75 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 13:38:17.75 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 13:38:17.75 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 13:40:07.07 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 13:40:07.07 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 13:40:07.07 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 13:42:57.12 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 13:42:57.13 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 13:42:57.13 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 13:48:27.03 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 13:48:27.03 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 13:48:27.03 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 13:48:44.68 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 13:48:44.68 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 13:48:44.68 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 11, 2015 15:41:36.80 NEW SESSION
+Oct 11, 2015 15:41:36.80 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 15:41:36.80 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 15:41:36.81 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 11, 2015 15:44:29.43 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 11, 2015 15:44:29.43 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 11, 2015 15:44:29.43 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 12, 2015 13:49:51.88 NEW SESSION
+Oct 12, 2015 13:49:51.88 *************************
+Oct 12, 2015 13:49:51.88 A coding exception was thrown in a Promise resolution callback.
+Oct 12, 2015 13:49:51.89 See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+Oct 12, 2015 13:49:51.89 
+Oct 12, 2015 13:49:51.89 Full message: TypeError: inspector is undefined
+Oct 12, 2015 13:49:51.89 Full stack: CM_inspectNode/<@chrome://browser/content/nsContextMenu.js:513:9
+Oct 12, 2015 13:49:51.90 Handler.prototype.process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+Oct 12, 2015 13:49:51.90 this.PromiseWalker.walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:801:7
+Oct 12, 2015 13:49:51.90 this.PromiseWalker.scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:740:39
+Oct 12, 2015 13:49:51.90 
+Oct 12, 2015 13:49:51.91 *************************
+Oct 12, 2015 13:54:17.63 1444638257622	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 12, 2015 18:41:22.88 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 12, 2015 18:41:22.88 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 12, 2015 18:41:22.88 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 12, 2015 18:46:32.83 console.error: 
+Oct 12, 2015 18:46:32.83   Message: Error: Unexpected packet server1.conn4.customhighlighter88, {"from":"server1.conn4.customhighlighter88","error":"noSuchActor","message":"No such actor for ID: server1.conn4.customhighlighter88"}
+Oct 12, 2015 18:46:32.83   Stack:
+Oct 12, 2015 18:46:32.84     Front<.onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:1208:17
+Oct 12, 2015 18:46:32.84 DebuggerClient.prototype.onPacket@resource://gre/modules/devtools/dbg-client.jsm:977:7
+Oct 12, 2015 18:46:32.84 LocalDebuggerTransport.prototype.send/<@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:569:11
+Oct 12, 2015 18:46:32.84 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Oct 12, 2015 18:46:32.84 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Oct 12, 2015 18:46:32.84 
+Oct 12, 2015 18:46:32.84 Handler function LocalDebuggerTransport instance's this.other.hooks.onPacket threw an exception: Error: Unexpected packet server1.conn4.customhighlighter88, {"from":"server1.conn4.customhighlighter88","error":"noSuchActor","message":"No such actor for ID: server1.conn4.customhighlighter88"}
+Oct 12, 2015 18:46:32.84 Stack: Front<.onPacket@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/protocol.js:1208:17
+Oct 12, 2015 18:46:32.84 DebuggerClient.prototype.onPacket@resource://gre/modules/devtools/dbg-client.jsm:977:7
+Oct 12, 2015 18:46:32.84 LocalDebuggerTransport.prototype.send/<@resource://gre/modules/devtools/dbg-client.jsm -> resource://gre/modules/devtools/transport/transport.js:569:11
+Oct 12, 2015 18:46:32.84 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Oct 12, 2015 18:46:32.84 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Oct 12, 2015 18:46:32.84 Line: 1208, column: 17
+
+Oct 14, 2015 20:07:15.26 NEW SESSION
+Oct 14, 2015 20:07:15.26 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 14, 2015 20:07:15.30 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 14, 2015 20:07:15.30 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 14, 2015 20:07:25.63 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 14, 2015 20:07:25.63 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 14, 2015 20:07:25.63 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 15, 2015 10:17:36.22 NEW SESSION
+Oct 15, 2015 10:17:36.22 [Child 1040] WARNING: pipe error: 109: file c:/builds/moz2_slave/rel-m-rel-w32_bld-000000000000/build/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 333
+Oct 15, 2015 10:32:19.87 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:32:19.87 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:32:19.87 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:32:28.86 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:32:28.87 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:32:28.87 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:32:56.02 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:32:56.02 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:32:56.02 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:32:59.15 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:32:59.15 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:32:59.15 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:33:30.92 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:33:30.92 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:33:30.93 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:34:26.11 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:34:26.12 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:34:26.12 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:34:54.13 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:34:54.13 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:34:54.14 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:34:58.51 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:34:58.51 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:34:58.51 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 10:37:57.65 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 15, 2015 10:37:57.65 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 15, 2015 10:37:57.65 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 15, 2015 13:54:17.39 1444897457377	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 16, 2015 14:58:39.27 NEW SESSION
+Oct 16, 2015 14:58:39.27 1444987719243	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 19, 2015 21:13:47.41 NEW SESSION
+Oct 19, 2015 21:13:47.41 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 19, 2015 21:13:47.43 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 19, 2015 21:13:47.43 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 19, 2015 21:14:53.30 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 19, 2015 21:14:53.30 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 19, 2015 21:14:53.30 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 19, 2015 21:14:56.62 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 19, 2015 21:14:56.62 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 19, 2015 21:14:56.62 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 20, 2015 10:14:02.34 NEW SESSION
+Oct 20, 2015 10:14:02.34 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 20, 2015 10:14:02.34 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 20, 2015 10:14:02.35 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 20, 2015 13:18:41.08 1445327321081	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Oct 23, 2015 10:21:04.41 NEW SESSION
+Oct 23, 2015 10:21:04.41 1445575864284	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 23, 2015 10:56:49.05 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 10:56:49.05 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 10:56:49.05 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 11:13:34.11 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 11:13:34.11 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 11:13:34.11 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 23, 2015 13:58:47.74 NEW SESSION
+Oct 23, 2015 13:58:47.74 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 13:58:47.77 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 13:58:47.77 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 13:58:47.77 X2@http://cdn1.srv.revdepo.com/script/rhpop_1.1.30.js line 1 > eval:1:89076
+Oct 23, 2015 13:58:47.77 M2@http://cdn1.srv.revdepo.com/script/rhpop_1.1.30.js line 1 > eval:1:8796
+Oct 23, 2015 13:58:47.77 s2/g/<@http://cdn1.srv.revdepo.com/script/rhpop_1.1.30.js line 1 > eval:1:48201
+
+Oct 23, 2015 16:55:57.69 NEW SESSION
+Oct 23, 2015 16:55:57.69 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 16:55:57.72 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 16:55:57.72 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:07:04.83 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:07:04.83 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:07:04.83 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:10:15.99 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:10:15.99 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:10:15.99 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:21:32.56 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:21:32.65 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:21:32.65 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:21:43.74 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:21:43.74 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:21:43.75 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:22:15.89 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:22:15.89 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:22:15.89 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 17:24:31.14 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 17:24:31.15 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 17:24:31.15 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 19:47:45.30 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 19:47:45.30 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 19:47:45.31 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 23, 2015 20:53:50.61 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 23, 2015 20:53:50.61 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 23, 2015 20:53:50.61 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 24, 2015 13:12:56.62 NEW SESSION
+Oct 24, 2015 13:12:56.62 1445672576649	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 24, 2015 13:56:21.80 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 13:56:21.83 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 13:56:21.83 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 16:31:18.78 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 16:31:18.78 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 16:31:18.78 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 16:31:49.00 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 16:31:49.00 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 16:31:49.01 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 16:40:03.66 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 16:40:03.66 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 16:40:03.66 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 17:10:26.05 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 17:10:26.05 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 17:10:26.05 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 19:54:32.30 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 19:54:32.32 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 19:54:32.32 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 19:54:48.42 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 19:54:48.42 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 19:54:48.42 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 20:16:30.71 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 20:16:30.71 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 20:16:30.71 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 24, 2015 20:16:39.46 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 24, 2015 20:16:39.46 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 24, 2015 20:16:39.46 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 26, 2015 10:42:53.66 NEW SESSION
+Oct 26, 2015 10:42:53.66 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 26, 2015 10:42:53.66 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 26, 2015 10:42:53.66 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 26, 2015 10:44:21.83 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 26, 2015 10:44:21.83 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 26, 2015 10:44:21.83 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 26, 2015 10:47:01.10 1445836620543	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 26, 2015 19:55:39.82 I/SampleTable( 5224): There are reordered frames present.
+Oct 26, 2015 19:55:39.86 I/SampleTable( 5224): There are reordered frames present.
+Oct 26, 2015 19:55:52.73 I/SampleTable( 5224): There are reordered frames present.
+Oct 26, 2015 19:55:52.74 I/SampleTable( 5224): There are reordered frames present.
+Oct 26, 2015 19:59:49.10 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 26, 2015 19:59:49.11 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 26, 2015 19:59:49.11 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 26, 2015 20:03:17.08 I/SampleTable( 5224): There are reordered frames present.
+Oct 26, 2015 20:03:17.08 I/SampleTable( 5224): There are reordered frames present.
+
+Oct 27, 2015 10:56:43.34 NEW SESSION
+Oct 27, 2015 10:56:43.34 1445923603331	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+Oct 27, 2015 10:56:47.49 1445923607512	addons.xpi	WARN	Exception running bootstrap method shutdown on firebug@software.joehewitt.com: TypeError: scope.gcli.removeCommand is not a function (resource://firebug/gcli.js:187:9) JS Stack trace: unregisterCommands@gcli.js:187:9 < FirebugGCLICommands.shutdown@gcli.js:50:9 < shutdown@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Users/Mayank.yadav/AppData/Roaming/Mozilla/Firefox/Profiles/o61w9a4i.default/extensions/firebug@bootstrap.js:104:5 < XPI_callBootstrapMethod@XPIProvider.jsm:4657:9 < AI_startInstall/<@XPIProvider.jsm:5991:1
+Oct 27, 2015 12:59:42.47 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 27, 2015 12:59:42.47 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 27, 2015 12:59:42.47 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 27, 2015 13:08:25.22 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 27, 2015 13:08:25.22 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 27, 2015 13:08:25.22 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Oct 27, 2015 14:54:58.72 NEW SESSION
+Oct 27, 2015 14:54:58.72 hashcompleter: cancelling request to https://safebrowsing.google.com/safebrowsing/gethash?client=navclient-auto-ffox&appver=41.0.2&pver=2.2
+Oct 27, 2015 14:54:58.73 hashcompleter: notifying failure
+
+Oct 28, 2015 15:10:37.98 NEW SESSION
+Oct 28, 2015 15:10:37.98 Handler function threw an exception: TypeError: threadActor is null
+Oct 28, 2015 15:10:37.99 Stack: TabActor.prototype._windowReady@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/webbrowser.js:1651:1
+Oct 28, 2015 15:10:37.99 TabActor.prototype._changeTopLevelDocument/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/server/actors/webbrowser.js:1588:7
+Oct 28, 2015 15:10:37.99 makeInfallible/<@resource://gre/modules/commonjs/toolkit/loader.js -> resource://gre/modules/devtools/DevToolsUtils.js:83:14
+Oct 28, 2015 15:10:37.99 Line: 1651, column: 1
+Oct 28, 2015 17:22:33.93 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 28, 2015 17:22:33.93 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 28, 2015 17:22:33.93 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 28, 2015 17:23:09.16 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 28, 2015 17:23:09.16 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 28, 2015 17:23:09.16 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 28, 2015 17:24:43.15 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 28, 2015 17:24:43.15 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 28, 2015 17:24:43.15 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+Oct 28, 2015 17:24:51.87 WARNING: content window passed to PrivateBrowsingUtils.isWindowPrivate. Use isContentWindowPrivate instead (but only for frame scripts).
+Oct 28, 2015 17:24:51.88 pbu_isWindowPrivate@resource://gre/modules/PrivateBrowsingUtils.jsm:25:14
+Oct 28, 2015 17:24:51.88 nsBrowserAccess.prototype.openURI@chrome://browser/content/browser.js:15917:21
+
+Nov 07, 2015 11:03:11.40 NEW SESSION
+Nov 07, 2015 11:03:11.40 1446874391397	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property
+
+Nov 30, 2015 14:43:14.27 NEW SESSION
+Nov 30, 2015 14:43:14.27 1448874794272	addons.update-checker	WARN	Update manifest for {972ce4c6-7e08-4474-a285-3208198ce6fd} did not contain an updates property

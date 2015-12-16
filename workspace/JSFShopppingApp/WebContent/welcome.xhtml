@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+ xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+            xmlns:p="http://primefaces.org/ui">
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>body{ background-image:url(http://www.splitshire.com/wp-content/uploads/2014/09/SplitShire_Blur_Background_XVI.jpg) }</style>
+
+<style>
+.bg-1 { 
+    background-color: #474e5d; /* Green */
+    color: #ffffff;
+    opacity:0.93;
+}
+
+.well{
+opacity:0.93;
+}
+
+
+</style>
+<script>
+
+
+$(document).ready(function(){
+    $("#Menbtn").click(function(){
+        $(".add").replaceWith("<h1>Men:"+men+"</h1>"); 
+
+    });
+    $("#Womenbtn").click(function(){
+        $(".add").replaceWith("<h1>women</h1>");
+    });
+    $("#Childbtn").click(function(){
+        $(".add").replaceWith("<div ><h1>child</h1></div>");
+    });
+});
+</script>
+</h:head>
+
+<h:body style="padding:20px">
+
+
+<div id="use">Message</div>
+       <!--  <form jsf:id="userform" role="form">
+ 
+            <p:messages id="msg" showDetail="true" closable="true" />
+ 
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input id="firstname" type="text" class="form-control" placeholder="Enter firstname" jsf:value="#{userView.user.firstname}" />
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input id="lastname" type="text" class="form-control" placeholder="Enter lastname" jsf:value="#{userView.user.lastname}" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter email" jsf:value="#{userView.user.email}" />
+            </div>
+            <button type="submit" class="btn btn-default btn-primary" jsf:actionListener="#{userView.save}">
+                Submit
+                
+            </button>
+        </form> -->
+        <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Cart:</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+     
+    
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">Welcome:
+        <h:outputFormat value="#{customerBean.username}"/>
+        
+        </a></li>
+      <li><a href="#about">Logout</a></li>
+    </ul>
+    
+    </div>
+  </div>
+</nav>
+<!-- navbar ends -->
+      <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left" >
+          <div class="row-offcanvas row-offcanvas-right">
+             <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation">
+               <p class="visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              
+              <div class="well sidebar-nav" style='position:fixed;' >
+                <ul class="nav">
+                  <li>Select From Options</li>
+                  <li class="active"><a id="Menbtn" href="#">Men</a></li>
+                 
+                  <li><a id="Womenbtn" href="#">Women</a></li>
+                  <li><a id="Childbtn" href="#">Childrens</a></li>
+                  
+                </ul>
+              </div><!--/.well -->
+            </div>
+            
+            <!--/span-->
+            
+            <div class="col-xs-12 col-sm-8">
+              <p class="pull-left visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              <p class="pull-right visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvasright"><i class="glyphicon glyphicon-chevron-right"></i></button>
+              </p>
+              <div class="jumbotron">
+                <h1>Shopping, Today!</h1>
+                <div class="add" >here</div>
+                <p>place to add images</p>
+             
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://sharukhwaseem.weebly.com/uploads/3/9/7/5/39751488/s901993193701188121_p2_i1_w1300.jpeg"/>              
+                  <div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>
+                 	
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                  
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://sharukhwaseem.weebly.com/uploads/3/9/7/5/39751488/s901993193701188121_p2_i1_w1300.jpeg"/>              
+					<div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://static14.jassets.com/p/Identiti-Solid-Blue-Slim-Fit-Casual-Shirt-1903-540237-1-product2.jpg"/>              
+					<div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://avasystemiconline.com/uploaded/large/1433853151afgdfer.jpg"/>              
+					<div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://www.fellsman.org.uk/wp-content/uploads/2013/04/POLO-SHIRT-ROYAL-BLUE.jpg"/>              
+					<div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>                  
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+                 <div class="col-sm-6 col-lg-4">
+                  <h2>Heading</h2>    
+                   <img class="thumbnail img-responsive" src="http://sharukhwaseem.weebly.com/uploads/3/9/7/5/39751488/s901993193701188121_p2_i1_w1300.jpeg"/>              
+					<div class="well well-sm">
+					<table class="table table-responsive">
+					<tr>
+					<td>Product</td>
+					<td>shirts</td>
+					</tr>
+					<tr>
+					<td>Price</td>
+					<td>$20</td>
+					</tr>
+					</table>
+					</div>                 
+                  <p><a class="btn btn-default" href="#">View details »</a></p>
+                </div><!--/span-->
+              </div><!--/row-->
+            </div><!--/span-->
+    
+            <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebarRight" role="navigation">
+               <p class="visible-xs">
+                <button class="btn btn-primary btn-xs" type="button" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+              </p>
+              <div class="well sidebar-nav" style='position:fixed;' >
+                <ul class="nav">
+                  <li>Sort By</li>
+                  <li class="active"><a href="#">pricing</a></li>
+                  <li><a href="#">popularity</a></li>
+                  <li><a href="#">quality</a></li>
+                  
+                  
+                  <li>Recent Visits</li>
+                  <li><a href="#">A</a></li>
+                  <li><a href="#">B</a></li>
+                </ul>
+                <ul>
+                <li>Order</li>
+                  <li><a href="#">Pay by card</a></li>
+                  <li><a href="#">cash on deliverey</a></li>
+                </ul>
+              </div><!--/.well -->
+               <div class="well sidebar-nav" style='position:fixed;' >
+                <ul class="nav">
+                  <li>Sort By</li>
+                  <li class="active"><a href="#">pricing</a></li>
+                  <li><a href="#">popularity</a></li>
+                  <li><a href="#">quality</a></li>
+                  
+                  
+                  <li>Recent Visits</li>
+                  <li><a href="#">A</a></li>
+                  <li><a href="#">B</a></li>
+                </ul>
+                <ul>
+                <li>Order</li>
+                  <li><a href="#">Pay by card</a></li>
+                  <li><a href="#">cash on deliverey</a></li>
+                </ul>
+              </div><!--/.well -->
+            </div><!--/span-->
+          
+        </div>
+
+      </div><!--/row-->
+        
+      <br/>
+        
+      <footer>
+        <p style="color:white;">© Yash Technoloogies 2015</p>
+      </footer>
+ 
+    </div><!--/.container-->
+       
+    </h:body>
+</html>
