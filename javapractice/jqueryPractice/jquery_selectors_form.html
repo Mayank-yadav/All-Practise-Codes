@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Jquery Testing</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$(':input').click(function(){
+				$(this).addClass('blue');
+			});
+	
+		});
+		
+		
+		</script>
+		<style>
+			.blue{
+				border:2px solid blue;
+				}
+		</style>
+	</head>
+	<body>
+		<form>
+		Username:<input type="text" name="txtUserName"/><br/><br/>
+		PassWord:<input type="text" name="txtPassword"><br/>
+		</form>
+	</body>
+</html>

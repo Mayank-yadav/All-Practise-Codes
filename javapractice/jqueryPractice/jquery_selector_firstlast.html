@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Jquery Testing</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$('li:last').addClass("red");
+		});
+		$(document).ready(function(){
+		$('li:first').addClass("green");
+		});
+		
+		</script>
+		<style type="text/css">
+			.red{
+				
+				background:red;
+				color:white;
+				}
+			.green{
+				background:green;
+				color:white;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<p>Document example Demo</p>
+		<ul>
+			<li>101 Rajesh</li>
+			<li>102 Brijesh</li>
+			<li>103 Vinay</li>
+			<li>104 Sanjay</li>
+	</body>
+</html>

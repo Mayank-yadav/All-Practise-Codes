@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Jquery Testing</title>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$('li:even').addClass("red");
+		});
+		$(document).ready(function(){
+		$('li:odd').addClass("green");
+		});
+		
+		</script>
+		<style type="text/css">
+			.red{
+				
+				background:red;
+				color:white;
+				}
+			.green{
+				background:green;
+				color:white;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<p>Document example Demo</p>
+		<ul>
+			<li>First element of list</li>
+			<li>second element of list</li>
+			<li>Third element of list</li>
+			<li>Fourth element of list</li>
+	</body>
+</html>
