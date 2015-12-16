@@ -1,0 +1,20 @@
+
+public class Test {
+
+	public static void main(String args[]){
+		B b=new B();
+		b.tests();
+	}
+}
+
+
+class A{
+	public void tests(){
+		System.out.println("inside a");
+	}
+}
+class B extends A{
+	public void tests(){
+		System.out.println("inside b");
+	}
+}

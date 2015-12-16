@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Currency Converter App</title>
+</head>
+<h3>Currency Convert Form (Dollar to selected currency)</h3>
+<form action="ConverterServlet" method="POST">
+ <table border="0">
+   <tr>
+    <td>Enter Currency ($)</td>
+    <td><input type="text" name="currValue" value="0" /></td>
+   </tr>
+   <tr>
+    <td>Select Desired currency  type</td>
+    <td><select name="currType">
+      <option value="SelectOne">Select One</option>
+          <option value="rupees">rupees</option>
+          <option value="euro">euro</option>
+          <option value="pond">pond</option>
+          <option value="yen">yen</option>
+          <option value="ruble">ruble</option>
+        </select></td>
+      </tr>
+      <tr>
+          <td><input type="submit" value="Convert" /></td>
+          <td><input type="reset" value="Reset" /></td>
+      </tr>
+</table>
+</form>
+</html>
